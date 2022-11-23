@@ -26,13 +26,13 @@ img {
   max-width: 100%;
 }
 
-[class$="__container"] {
+[class*="__container"] {
   max-width: 120rem;
   margin: 0 auto;
   width: 95%;
 }
 
-[class$="__heading"] {
+[class*="__heading"] {
   font-size: 4rem;
   text-align: center;
   font-family: 900;
@@ -142,8 +142,6 @@ img {
   font-size: 8rem;
 }
 
-.model__description {}
-
 .model__price {
   font-size: 6rem;
   color: var(--primary);
@@ -224,6 +222,60 @@ img {
 }
 
 .product__link:hover {
+  background-color: var(--primary);
+  color: var(--blanco);
+}
+
+.courses {
+  background-image: linear-gradient( to right, rgb( 0 0 0 / .65 ), rgb( 0 0 0 / .65 ) ), url(../img/cursos_bg.jpg);
+  padding: 10rem 0;
+  margin-top: 10rem;
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media ( min-width: 768px ) {
+  .courses__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.courses__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media ( min-width: 768px ) {
+  .courses__content {
+    grid-column: 2 / 3;
+  }
+}
+
+.courses__text {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.courses__link {
+  color: white;
+  margin-top: 2rem;
+  display: inline-block;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+.courses__link:hover {
   background-color: var(--primary);
   color: var(--blanco);
 }
