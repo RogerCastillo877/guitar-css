@@ -300,6 +300,11 @@ img {
   }
 }
 
+.input {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .input__content {
   padding: 2rem;
 }
