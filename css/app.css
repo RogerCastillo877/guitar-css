@@ -295,6 +295,9 @@ img {
   .blog__grid {
     grid-template-columns: repeat(4, 1fr);
   }
+  .blog__grid--page {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .input__content {
